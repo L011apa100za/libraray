@@ -19,7 +19,42 @@
 
         <!-- favicon.ico. Place these in the root directory. -->
         <link rel="shortcut icon" href="favicon.ico">
-
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #333;
+                padding: 10px 20px;
+                color: white;
+            }
+            .navbar a {
+                color: white;
+                text-decoration: none;
+                padding: 10px 15px;
+                transition: background-color 0.3s;
+            }
+            .navbar a:hover {
+                background-color: #555;
+            }
+            .navbar-brand {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+            .navbar-nav {
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            .navbar-nav li {
+                margin: 0 5px;
+            }
+        </style>
     </head>
 
     <body>
@@ -27,6 +62,15 @@
 
     <!-- Header -->
     <header class="pt2 pb1 align--center">
+        <nav class="navbar">
+            <div class="navbar-brand">大创项目管理系统</div>
+            <ul class="navbar-nav">
+                <li><a href="http://library:8080/?p=Admin&c=Index&a=index">后台管理</a></li>
+                <li><a href="#about">关于</a></li>
+                <li><a href="#contact">联系我们</a></li>
+                <li><a href="#project">项目简介</a></li>
+            </ul>
+        </nav>
         <div class="container">
             <p>Welcome to</p>
             <h1 title="Camp Chippewa"><img class="logo" src="img/logo.svg" alt="Camp Chippewa"></h1>
